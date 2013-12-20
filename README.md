@@ -29,10 +29,14 @@ Or install it yourself as:
     date = Date.today
     
     test=TestClass.new({ :boolean=>'1', :date=>date.to_s, :time => time.to_s, :integer => '3' })
-    test.boolean => true
-    test.date => Date
-    test.time => Time
-    test.integer => 3
+    test.boolean # true
+    test.date # Date
+    test.time # Time
+    test.integer # 3
+    
+    form_for(test) # Supported
+    test.attributes # Hash
+    test.serializable_hash # Hash
 
 ## Contributing
 
