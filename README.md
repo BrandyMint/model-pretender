@@ -1,4 +1,4 @@
-# Model::Pretender
+# ModelPretender
 
 TODO: Write a gem description
 
