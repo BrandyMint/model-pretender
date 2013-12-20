@@ -23,6 +23,8 @@ Or install it yourself as:
       date_attr_accessor :date 
       time_attr_accessor :time 
       integer_attr_accessor :integer 
+      
+      validates :boolean, :presence => true
     end
 
     time = Time.now
@@ -33,6 +35,7 @@ Or install it yourself as:
     test.date # Date
     test.time # Time
     test.integer # 3
+    test.valid? # true
     
     form_for(test) # Supported
     test.attributes # Hash
